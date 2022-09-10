@@ -106,6 +106,7 @@ nav > ul{
     background-size: cover;
     height: auto;
     /* width: 70vw; */
+    max-width: 100%;
     background-repeat: no-repeat;
 }
 
@@ -225,6 +226,16 @@ nav > ul{
         object-fit: contain;
         margin-top: 20px;
     }
+
+    /* .card{
+        padding: 8px;
+        background:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        url('/Images/c.jpg');
+        background-size: cover;
+        height: auto;
+        width: 70vw;
+        background-repeat: no-repeat;
+    } */
 }
 
 @media(max-width:394px){
@@ -302,6 +313,10 @@ nav > ul{
 
     .navbar > ul{
         float: left;
+    }
+
+    .status2{
+        margin-right: 20px ;
     }
 }
 

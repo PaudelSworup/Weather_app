@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0f2840;
+}
+
+.navbar{
+    height: auto;
+    background-color:#0f2840;;
+    top: 0;
+    padding: 20px;
+    position: sticky;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    position: relative;
+}
+
+.fc{
+    background-color: #0f2840;
+}
+
+#ds{
+    border-radius: 10px;
+}
+
+#ds::placeholder{
+    font-size: 20px;
+}
+
+.search-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 38px;
+    width: 38px;
+    font-size: 20px;
+
+}
+
+ .t{
+    color: #fff;
+    
+}
+
+nav > ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.list-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+    gap:5px;
+}
+
+.list-items > .deg{
+    margin-top: 20px;
+}
+
+.list-items > img{
+    width: 50px;
+}
+
+.list-items > i{
+    font-size: 30px;
+    color: red!important;
+    cursor: pointer;
+
+}
+
+
+.lt{
+    margin: 5px 10px;
+}
+
+
+.list-items > i,p{
+    color: #fff;
+}
+
+#li{
+    display: none;
+}
+
+.card{
+    padding: 10px;
+    background:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('/Images/c.jpg');
+    background-size: cover;
+    height: auto;
+    /* width: 70vw; */
+    background-repeat: no-repeat;
+}
+
+.weather_Detail > p{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.p2{
+    font-size: 14px;
+}
+
+.sub{
+    font-size: 25px;
+}
+
+
+.csm{
+    width: 80px;
+    height: 80px;
+}
+
+#d1{
+    font-size: 50px
+}
+
+
+.of{
+    margin-top: 50px;
+}
+
+#dayType{
+    text-transform: uppercase;
+    margin: 50px 0 0 40px;
+    font-size: 25px;
+
+}
+
+.deg{
+    margin-top: 30px;
+}
+
+.status{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    /* gap: 20px; */
+}
+
+.status > img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.status2{
+    display: flex;
+}
+
+.lastPart{
+    display: flex;
+    gap: 20px;
+}
+
+.day-t-status{
+    display: flex;
+}
+
+.wind,.humidity,.visibility,.dp,.pressure{
+    line-height: 2px;
+    text-transform: uppercase;
+}
+
+#wv,#hv,#vv,#dv,#pv{
+    text-transform: lowercase;
+}
+
+@media(max-width:420px){
+    .lastPart{
+        display: flex;
+        gap: 16px;
+    }
+
+    .wind,.humidity,.visibility,.dp,.pressure{
+        line-height: 10px;
+    }
+
+    #dew{
+        line-height: 1px;
+    }
+
+    #point{
+        line-height: 30px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        overflow-x: hidden;
+        z-index: 1;
+    }
+
+    .status{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .status > img{
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:394px){
+    .lastPart{
+        display: flex;
+        gap: 9px;
+    }
+    .status{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .status2{
+        display: flex;
+    }
+
+    .navbar{
+        overflow-x: hidden;
+        z-index: 1;
+    }
+
+    .list-items{
+        display: block;
+        flex-direction: column;
+    }
+
+    
+}
+
+@media(max-width:361px){
+    .lastPart{
+        display: flex;
+        gap: 5px;
+    }
+
+    .status{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .navbar{
+        overflow-x: hidden;
+        z-index: 1;
+    }
+
+    .list-items{
+        display: block;
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:281px){
+    .lastPart{
+        display: block;
+        line-height: 10px;
+    }
+
+    .day-t-status{
+        display: block;
+    }
+
+    .navbar{
+        overflow-x: hidden;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    .navbar > ul{
+        float: left;
+    }
+}
+
+
+
+
+

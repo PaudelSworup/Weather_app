@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="/Images/fav.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="navbar shadow-lg">
+        <div class="search">
+            <input type="text" placeholder="search for location" class="form-control fc" id="ds" size="40"/>
+            <i class="fa-solid fa-magnifying-glass search-icon" onclick="loadData()"></i>
+            <label for="ds" class="t lt"><span id="city"></span><span id="country"></span></label> 
+        </div>
+
+        <ul>
+            <li>
+                <div class="list-items" id="li">
+                    <p id="p" class="deg"></p>
+                    <img src="http://openweathermap.org/img/wn/04d@4x.png" id="navImage" alt="">
+                    <p class="deg"><span id="d"></span><sup>o</sup></p>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="hideDiv()"></i>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="mt-5">
+        <div class="container">
+            <div class="card shadow-lg" id="cards">
+                <div class="weather_Detail">
+                    <p class="p1">current weather</p>
+                    <p id="setTime"></p>
+                </div>
+
+                <div class="status">
+                    <div class="status2">
+                        <img src="http://openweathermap.org/img/wn/10n@4x.png" id="csm" alt=""/>
+                    <p class="deg"><span id="d1">66</span></p>
+                    <p class="of"><sup>0<sub class="sub">F</sub></sup></p>
+                    </div>
+                    
+                    <div class="day-t-status">
+                        <p id="dayType"></p>
+                    </div>
+                    
+                </div>
+
+                <div class="lastPart">
+                    <div class="wind">
+                        <p>Wind</p>
+                        <p id="wv"></p>
+                    </div>
+
+                    <div class="humidity">
+                        <p>Humidity</p>
+                        <p id="hv"></p>
+                    </div>
+
+                    <div class="visibility">
+                        <p>Visibility</p>
+                        <p id="vv"></p>
+                    </div>
+
+                    <div class="pressure">
+                        <p>Pressure</p>
+                        <p id="pv"></p>
+                    </div>
+
+                    <div class="dp">
+                        <p>Dew <span id="point">point</span></p>
+                        <p id="dew"><span id="dv"></span><sup>o</sup></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <script src="/index.js"></script>
+        <script src="/lib/moment.js"></script>
+
+    </div>
+
+
+</body>
+</html>

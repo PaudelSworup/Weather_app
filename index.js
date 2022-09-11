@@ -247,7 +247,7 @@ function getWeatherDetail(temp,wind,visibility){
     // dew points
     let dp = temp.temp - ((100-temp.humidity)/5)
     let f = Math.round(1.8*(dp-273) + 32)
-    dewValue.innerHTML = f
+    dewValue.innerHTML = `${f}<sup>ᵒ</sup>`
 
     // wind value
     let mph = Math.round(wind.speed*2.237)

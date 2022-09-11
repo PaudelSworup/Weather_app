@@ -11,6 +11,7 @@ let deg = document.getElementById('d')
 let deg2 = document.getElementById('d1')
 let img2 = document.getElementById('csm')
 let card = document.getElementById('cards')
+let rain = document.getElementById('rains')
 let windValue = document.getElementById('wv')
 let humidityValue = document.getElementById('hv')
 let pressureValue = document.getElementById('pv')
@@ -126,103 +127,117 @@ function weatherCondition(val){
     switch(val){
         case "01d":
             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/cs.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.backgroundSize = '100% 100%'
+            rain.style.background = 'none'  
             break
 
         case "01n":
             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/csn.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.backgroundSize = '100% 100%'
+            rain.style.background = 'none'  
             break
 
         case "02d":
             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/fec.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.backgroundSize = '100% 100%'
+            rain.style.background = 'none'  
             break
 
         case "02n":
             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/fecn.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.backgroundSize = '100% 100%'
+            rain.style.background = 'none'  
             break
 
         case "03d":
             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/scd.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.backgroundSize = '100% 100%'
+            rain.style.background = 'none'   
             break
 
         case "03n":
             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/scn.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.backgroundSize = '100% 100%'
+            rain.style.background = 'none' 
             break
 
 
         case "04d":
             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/bcd.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.backgroundSize = '100% 100%'
+            rain.style.background = 'none'  
             break
 
         case "04n":
             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/bcn.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.backgroundSize = '100% 100%'
+            rain.style.background = 'none'  
             break
 
         case "09d":
-            card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/rd.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/rainy.jpg')"
+            card.style.backgroundSize = '100% 100%'
             break
 
 
          case "09n":
-            card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/rn.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/rainy.jpg')"
+            card.style.backgroundSize = '100% 100%'
             break
 
 
         case "10d":
-             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/rd.jpg')"
-             card.style.backgroundSize = 'cover'
+             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/rainy.jpg')"
+             card.style.backgroundSize = '100% 100%'
             break
 
 
         case "10n":
-             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/rn.jpg')"
-             card.style.backgroundSize = 'cover'
+             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/rainy.jpg')"
+             card.style.backgroundSize = '100% 100%'
              break
 
         case "11d":
              card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/tsd.jpg')"
-             card.style.backgroundSize = 'cover'
+             card.style.backgroundSize = '100% 100%'
+             rain.style.background = 'none'  
              break
 
 
          case "11n":
              card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/tsn.jpg')"
-             card.style.backgroundSize = 'cover'
+             card.style.backgroundSize = '100% 100%'
+             rain.style.background = 'none'  
              break
 
 
         case "12d":
              card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/snowfall.jpg')"
-             card.style.backgroundSize = 'cover'
+             card.style.backgroundSize = '100% 100%'
+             rain.style.background = 'none'  
              break
 
         case "12n":
              card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/snowfall.jpg')"
-             card.style.backgroundSize = 'cover'
+             card.style.backgroundSize = '100% 100%'
+             rain.style.background = 'none'  
              break
 
         case "20d":
             card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/mist.jpg')"
-             card.style.backgroundSize = 'cover'
+             card.style.backgroundSize = '100% 100%'
+             rain.style.background = 'none'  
              break
 
         case "20d":
              card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/mistn.jpg')"
-            card.style.backgroundSize = 'cover'
+            card.style.backgroundSize = '100% 100%'
+            rain.style.background = 'none'  
             break
 
         default : 
         card.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)),url('/Images/de.jpg')"
-        card.style.backgroundSize = 'cover'
+        card.style.backgroundSize = '100% 100%'
         break
     }
 }

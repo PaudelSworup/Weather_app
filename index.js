@@ -44,6 +44,7 @@ function loadData(){
 
         let iconImg = data['weather'][0]
         setImage(iconImg)
+        console.log(iconImg)
 
         showDayType(iconImg)
        
@@ -88,8 +89,8 @@ function hideDiv(){
 
 
 function setImage(img){
-    navImage.src = `http://openweathermap.org/img/wn/${img.icon}@4x.png`;
-    img2.src = `http://openweathermap.org/img/wn/${img.icon}@4x.png`
+    navImage.src =`https://openweathermap.org/img/wn/${img.icon}@4x.png`;
+    img2.src =`https://openweathermap.org/img/wn/${img.icon}@4x.png`
 }
 
 
@@ -233,7 +234,7 @@ function tempratureCalc(temp){
     console.log(temp.temp)
     let f = 1.8*(temp.temp-273) + 32
     deg.innerHTML = Math.round(f)
-    deg2.innerHTML = Math.round(f)
+    deg2.innerHTML = `${Math.round(f)}<sup>ᵒ<sub>F</sub></sup>`
 }
 
 // Td = T - ((100 - RH)/5.)  dew points
